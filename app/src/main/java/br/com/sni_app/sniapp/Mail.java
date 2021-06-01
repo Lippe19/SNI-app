@@ -22,6 +22,11 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
+/**
+ * Created by Luiz Philippe
+ * Site: lptag.com.br
+ * E-mail: contato@lptag.com.br
+ */
 
 public class Mail extends javax.mail.Authenticator {
     private String _user;

@@ -26,6 +26,12 @@ import javax.mail.Session;
 
 import fr.ganfra.materialspinner.MaterialSpinner;
 
+/**
+ * Created by Luiz Philippe
+ * Site: lptag.com.br
+ * E-mail: contato@lptag.com.br
+ */
+
 public class FormActivity extends AppCompatActivity {
 
     //referente ao botao salvar
