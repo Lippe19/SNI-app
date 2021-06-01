@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">SNI App</string>
+
+    <string-array name="organizacao">
+        <item>*Organização</item>
+        <item>Associação Fraternidade</item>
+        <item>Associação Pomba Branca</item>
+        <item>Associação dos Jovens</item>
+        <item>Associação Prosperidade</item>
+        <item>Associação dos Educadores</item>
+    </string-array>
+
+    <string-array name="regional">
+        <item>*Nome da Regional</item>
+        <item>SC-JOINVILLE</item>
+        <item>SC-XANXERÊ</item>
+        <item>SE-ARACAJU</item>
+        <item>SP-ARAÇATUBA</item>
+        <item> SP-ARARAQUARA</item>
+        <item> SP-ATIBAIA</item>
+        <item>SP-BARRETOS</item>
+        <item> SP-BAURU</item>
+        <item>SP-CAMPINAS</item>
+        <item> SP-DRACENA</item>
+        <item>SP-GUARATINGUETÁ</item>
+        <item>SP-GUARULHOS</item>
+        <item>SP-INTERLAGOS</item>
+        <item>SP-JABAQUARA</item>
+        <item>SP-LAPA</item>
+        <item>SP-MARÍLIA</item>
+        <item>SP-MOGI DAS CRUZES</item>
+        <item>SP-OSASCO</item>
+        <item>SP-OURINHOS</item>
+        <item>SP-PENHA</item>
+        <item>SP-PINHEIROS</item>
+        <item>SP-PRESIDENTE PRUDENTE</item>
+        <item>SP-RIBEIRÃO PRETO</item>
+        <item>SP-SANTANA</item>
+        <item>SP-SANTO AMARO</item>
+        <item>SP-SANTO ANDRÉ</item>
+        <item>SP-SANTOS</item>
+        <item>SP-SÃO BERNARDO DO CAMPO</item>
+        <item>SP-SÃO JOÃO DA BOA VISTA</item>
+        <item>SP-SÃO JOSÉ DO RIO PRETO</item>
+        <item>SP-SÃO JOSÉ DOS CAMPOS</item>
+        <item>SP-SÃO MIGUEL PAULISTA</item>
+        <item>SP-SOROCABA</item>
+        <item>SP-VILA PRUDENTE</item>
+        <item>TO-PALMAS</item>
+        <item>SP-ARICANDUVA</item>
+        <item>301-SP-SÃO PAULO 1</item>
+        <item>303-SP-SÃO PAULO 3</item>
+        <item>304-SP-SÃO PAULO 4</item>
+        <item>305-SP-SÃO PAULO 5</item>
+        <item>306-SP-SÃO PAULO 6</item>
+        <item>307-SP-ABC</item>
+        <item>308-SP-CENTRAL 1</item>
+        <item>309-SP-CENTRAL 2</item>
+        <item>310-SP-NORTE 1</item>
+        <item>312-SP-SUDOESTE</item>
+        <item>315-SP-ARARAQUARA 1</item>
+        <item>317-SP-ARARAQUARA 3</item>
+        <item>319-SP-NOROESTE 1</item>
+        <item>320-SP-NOROESTE 2</item>
+        <item>321-SP-PAULISTA 1</item>
+        <item>322-SP-PAULISTA 2</item>
+        <item>323-SP-SOROCABANA 1</item>
+        <item>324-SP-SOROCABANA 2</item>
+        <item>325-PR-PARANÁ 1</item>
+        <item>326-PR-PARANÁ 2</item>
+        <item>329-PR-PARANÁ 5</item>
+        <item>330-PR-PARANÁ 6</item>
+        <item>333-RJ-RIO DE JANEIRO 1</item>
+        <item>334-DF-BRASÍLIA 1</item>
+        <item>335-GO-GOIÁS</item>
+        <item>341-MS-MATO GROSSO 2</item>
+    </string-array>
+
+    <string-array name="dpevt">
+        <item>*Departamento que promoveu o Evento</item>
+        <item>Departamento 3ª idade</item>
+        <item>Departamento de Divulgadores</item>
+        <item>Departamento de Revistas</item>
+        <item>Departamento de Revistas</item>
+        <item>Departamento Feminino Jovens</item>
+        <item>Departamento Infantil</item>
+        <item>Reunião Específica para Homens</item>
+        <item>Outro departamento:</item>
+    </string-array>
+
+    <string-array name="evt">
+        <item>*Tipo de Evento</item>
+        <item>Conferência</item>
+        <item>Divulgação</item>
+        <item>Explicação e Prática de Purificação da Mente</item>
+        <item>Explicação e Prática de Shinsokan de Oração Mútua</item>
+        <item>Explicação e/ou Cerimônia em Memória dos Antepassados</item>
+        <item>Maratona de Sutras</item>
+        <item>Orientação Pessoal</item>
+        <item>Reunião com Palestra(s)</item>
+        <item>Reunião de Diretoria</item>
+        <item>Reunião de Estudos</item>
+        <item>Reunião de Vizinhança</item>
+        <item>Seminário</item>
+        <item>Visita de Benção</item>
+        <item>Outra atividade:</item>
+    </string-array>
+</resources>

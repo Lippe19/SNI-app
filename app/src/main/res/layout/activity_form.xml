@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/snif"
+    android:fillViewport="true"
+    tools:context=".FormActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/titulo_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ff0d00"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Relatório de Atividades"
+                android:textColor="#f9f9f9"
+                android:textSize="20sp" />
+
+            <!--prmeira linha -->
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/titulo_1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_txtNome"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/txtNome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="10"
+                        android:hint="*Nome"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_txtEmail"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="10"
+                        android:hint="*E-mail"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            segunda
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spinOrganizacao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll_1"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    app:ms_arrowColor="#ffffff"
+                    app:ms_arrowSize="18dp"
+                    app:ms_baseColor="#ffffff"
+                    app:ms_floatingLabelColor="#ffffff"
+                    app:ms_floatingLabelText="*Organização"
+                    app:ms_hintColor="#ffffff"
+                    app:ms_multiline="true" />
+
+            </LinearLayout>
+
+            TERCEIRA
+
+            <LinearLayout
+                android:id="@+id/ll_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spinRegional"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    app:ms_arrowColor="#ffffff"
+                    app:ms_arrowSize="18dp"
+                    app:ms_baseColor="#ffffff"
+                    app:ms_floatingLabelColor="#ffffff"
+                    app:ms_floatingLabelText="*Nome da Regional"
+                    app:ms_hintColor="#ffffff"
+                    app:ms_multiline="true" />
+            </LinearLayout>
+
+            quarta
+
+            <LinearLayout
+                android:id="@+id/ll_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_3"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_nomeAss"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_nomeAss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="10"
+                        android:hint="*Nome da Associação Local"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinDpEvt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_4"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:ms_arrowColor="#ffffff"
+                app:ms_arrowSize="18dp"
+                app:ms_baseColor="#ffffff"
+                app:ms_floatingLabelColor="#ffffff"
+                app:ms_floatingLabelText="Departamento que promoveu o Evento"
+                app:ms_hintColor="#ffffff"
+                app:ms_multiline="true" />
+
+            quinta
+
+            <LinearLayout
+                android:id="@+id/ll_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinDpEvt"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_data"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="10"
+                        android:hint="*Data do Evento"
+                        android:inputType="date"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_hora"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_hora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Horário do Evento"
+                        android:inputType="time"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_spinEvt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_5"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spinEvt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll_5"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_light"
+                    app:ms_arrowColor="#ffffff"
+                    app:ms_arrowSize="18dp"
+                    app:ms_baseColor="#ffffff"
+                    app:ms_floatingLabelColor="#ffffff"
+                    app:ms_floatingLabelText="*Tipo de Evento"
+                    app:ms_hintColor="#ffffff"
+                    app:ms_multiline="true" />
+            </LinearLayout>
+
+
+            sexta
+
+            <LinearLayout
+                android:id="@+id/ll_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_spinEvt"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_qtdPar"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_qtdPar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="*Quantidade de participantes"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            setima
+
+            <LinearLayout
+                android:id="@+id/ll_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_6"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_qtd1"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_qtd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Quantidade de participantes 1° vez"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_edit_qtdCol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_7"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_qtdCol"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_qtdCol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Quantidade de Colaboradores"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            oitava
+
+            <LinearLayout
+                android:id="@+id/ll_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_edit_qtdCol"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_qtdLvr"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_qtdLvr"
+                        style="@style/StyledTilEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Quantidade de livros vendidos"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <!-- nona -->
+            <TextView
+                android:id="@+id/titulo_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_8"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#ff0d00"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text=" Quantidade de Oração(s) de Cura Divina(s) divulgada(s)"
+                android:textColor="#f9f9f9"
+                android:textSize="20sp" />
+
+            <!-- decima -->
+            <LinearLayout
+                android:id="@+id/ll_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/titulo_2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_1m"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_1m"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="1 mes"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_3m"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_3m"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="3 meses"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <!-- decima primeira -->
+            <LinearLayout
+                android:id="@+id/ll_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_10"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_6m"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_6m"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="6 meses"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_1a"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="1 ano"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <!-- decima segunda -->
+            <LinearLayout
+                android:id="@+id/ll_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_11"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_proCarro"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_proCarro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Proteção para Carro"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_proCasa"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_proCasa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Proteção p/ Casa/Estab."
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <!-- decima terceira -->
+            <TextView
+                android:id="@+id/titulo_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_12"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#ff0d00"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Quantidade de Registros Espirituais divulgados"
+                android:textColor="#f9f9f9"
+                android:textSize="20sp" />
+
+            <!-- decima quarta -->
+            <LinearLayout
+                android:id="@+id/ll_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/titulo_3"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_fami"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_fami"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Família"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_alma"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_alma"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Alma"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <!-- decima quinta -->
+            <LinearLayout
+                android:id="@+id/ll_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_14"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_ange"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_ange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Angelical"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <!-- decima sexta -->
+            <TextView
+                android:id="@+id/titulo_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_15"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#ff0d00"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Quantidade de Revistas da SNI e jornal Querubim divulgados"
+                android:textColor="#f9f9f9"
+                android:textSize="20sp" />
+
+            <!-- decima setima -->
+            <LinearLayout
+                android:id="@+id/ll_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/titulo_4"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_fonL"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_fonL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Fonte de Luz"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_mulF"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_mulF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Mulher Feliz"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <!-- decima oitava -->
+            <LinearLayout
+                android:id="@+id/ll_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_17"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_MunI"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_munI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Mundo Ideal"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_quer"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_quer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Querubim"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+            <!-- decima nona -->
+            <TextView
+                android:id="@+id/titulo_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_18"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#ff0d00"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Quantidade de Assinatura(s) das Revistas da SNI e jornal Querubim divulgados"
+                android:textColor="#f9f9f9"
+                android:textSize="20sp" />
+
+            <!-- vigesima -->
+            <LinearLayout
+                android:id="@+id/ll_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/titulo_5"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_fonL1"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_fonL1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Fonte de Luz"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_mulF1"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_mulF1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Mulher Feliz"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <!-- vigesima primeira -->
+            <LinearLayout
+                android:id="@+id/ll_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_20"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_MunI1"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_munI1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Mundo Ideal"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_edit_quer1"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edit_quer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ems="5"
+                        android:hint="Querubim"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_21"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEmail"
+                    android:layout_width="120dp"
+
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/ll_21"
+                    android:layout_centerHorizontal="true"
+                    android:text="Enviar email" />
+
+                <Button
+                    android:id="@+id/btnSalvar"
+                    android:layout_width="120dp"
+
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/ll_21"
+                    android:layout_centerHorizontal="true"
+                    android:text="Salvar" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
